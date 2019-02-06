@@ -1,0 +1,31 @@
+//Creating database 
+// naming db in lower_case
+create database bookkart;
+// person table queries
+CREATE TABLE `bookkart`.`person` ( `first_name` VARCHAR(20) NOT NULL , `last_name` VARCHAR(30) NOT NULL , `email_address` VARCHAR(50) NOT NULL , `password_base64` VARCHAR(75) NOT NULL , `contact` BIGINT(20) NOT NULL ) ENGINE = InnoDB COMMENT = 'this table stores basic details needed for registration.';
+
+ALTER TABLE `person` ADD `role` VARCHAR(10) NULL AFTER `contact`;
+
+ALTER TABLE `person` ADD PRIMARY KEY( `email_address`);
+
+DELETE FROM `person` WHERE `person`.`email_address` = 'rockyshinde49@gmail.com'
+
+ALTER TABLE `person` ADD UNIQUE( `contact`);
+
+INSERT INTO `person` (`first_name`, `last_name`, `email_address`, `password_base64`, `contact`) VALUES ('?', '?', '?', '?', '?');
+ 
+select * from person where email_address=?;
+
+UPDATE `person` SET `first_name` = 'rocky' WHERE `person`.`email_address` = ''
+
+UPDATE `person` SET `password_base64` = '' WHERE `person`.`email_address` = ''
+
+ALTER TABLE `person` CHANGE `first_name` `first_name` VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+//book table
+
+CREATE TABLE `bookkart`. ( `book_id` BIGINT(30) NOT NULL , `book_name` VARCHAR(75) NOT NULL , `book_image` MEDIUMBLOB NULL , `quantity` INT(90) NOT NULL , `price` FLOAT NOT NULL , `discount` INT(20) NULL , `email_address_fk` VARCHAR(75) NOT NULL ) ENGINE = InnoDB;
+
+ALTER TABLE `book` ADD FOREIGN KEY (`email_address_fk`) REFERENCES Person(`email_address`)
+
+ALTER TABLE `book` ADD PRIMARY KEY( `book_id`)

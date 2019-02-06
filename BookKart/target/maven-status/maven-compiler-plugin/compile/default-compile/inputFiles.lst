@@ -1,0 +1,12 @@
+D:\Repositories\BookKart\src\main\java\com\BookKart\dao\EmailVerificationDAO.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\dao\RecoveryDAO.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\servlets\OTPValidation.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\servlets\PasswordRecovery.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\dao\RegisterDAO.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\models\DBConnection.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\models\LoginModel.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\models\Person.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\servlets\Login.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\dao\LoginDAO.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\servlets\CheckEmail.java
+D:\Repositories\BookKart\src\main\java\com\BookKart\servlets\Register.java
